@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="sv"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Repetitionsuppgifter – Kemi</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f4f6fb;--card:#fff;--tx:#1c2233;--mu:#5b6478;--ac:#4f46e5;--acbg:#eef0ff;--ok:#e8f7ee;--okb:#2e9e5b;--bd:#dde1ec}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12141c;--card:#1b1e29;--tx:#e8eaf2;--mu:#9aa2b8;--ac:#8b85ff;--acbg:#262a44;--ok:#16301f;--okb:#4cc582;--bd:#2c3142}}
+:root[data-theme="dark"]{--bg:#12141c;--card:#1b1e29;--tx:#e8eaf2;--mu:#9aa2b8;--ac:#8b85ff;--acbg:#262a44;--ok:#16301f;--okb:#4cc582;--bd:#2c3142}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:28px 16px 12px;max-width:760px;margin:auto}
+h1{margin:0 0 4px;font-size:1.6rem}
+header p{margin:0;color:var(--mu)}
+.bar{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+main{max-width:760px;margin:auto;padding:8px 16px 48px}
+h2{font-size:1.05rem;color:var(--ac);margin:26px 0 8px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+.q{display:flex;gap:10px}
+.n{flex:none;min-width:32px;height:32px;border-radius:16px;background:var(--ac);color:#fff;display:grid;place-items:center;font-weight:700;font-size:.85rem;padding:0 6px;box-sizing:border-box}
+.qt{font-weight:600}
+ul{margin:8px 0 0;padding-left:20px;color:var(--mu)}
+button{font:inherit;cursor:pointer;border:1px solid var(--ac);background:var(--acbg);color:var(--ac);border-radius:10px;padding:7px 14px;font-weight:600}
+button:hover{filter:brightness(.96)}
+.card button{margin-top:10px}
+.fa{display:none;margin-top:10px;background:var(--ok);border-left:4px solid var(--okb);border-radius:8px;padding:10px 12px}
+.fa.on{display:block}
+.fa div{margin:2px 0}
+.fa b{color:var(--okb)}
+.fig{margin-top:10px;overflow-x:auto}.t{border-collapse:collapse;margin-top:10px}.t td,.t th{border:1px solid var(--bd);padding:6px 10px;text-align:center;min-width:48px;height:20px;font-weight:600}.t th{background:var(--acbg);color:var(--ac)}.lg{font-size:.85rem;color:var(--mu);margin-top:4px}.lg i{display:inline-block;width:12px;height:12px;border-radius:3px;margin:0 4px 0 12px;vertical-align:-1px}.lg i:first-child{margin-left:0}.gl{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}.gl figure{margin:0;text-align:center;font-size:.85rem;color:var(--mu)}.ch span{display:inline-block;background:var(--acbg);color:var(--ac);border-radius:8px;padding:2px 10px;margin:8px 6px 0 0;font-size:.9rem}.nb{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--mu);border-radius:10px;padding:6px 14px;margin-top:10px}.nb div{display:flex;flex-direction:column;font-weight:700;color:var(--mu)}.nb b{font-size:2.2rem}.nb small{display:block;text-align:center;color:var(--mu)}
+#nbtn{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));width:54px;height:54px;border-radius:27px;font-size:1.5rem;padding:0;background:var(--ac);color:#fff;border:none;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:20}#np{position:fixed;right:16px;bottom:calc(80px + env(safe-area-inset-bottom,0px));width:min(380px,calc(100% - 32px));height:min(60vh,420px);background:var(--card);border:1px solid var(--bd);border-radius:14px;box-shadow:0 8px 28px rgba(0,0,0,.3);display:none;flex-direction:column;z-index:20;overflow:hidden}#np.on{display:flex}#np .h{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-bottom:1px solid var(--bd);font-weight:700}#np .h small{font-weight:400;color:var(--mu)}#np .h button{padding:2px 10px}#nt{flex:1;border:0;resize:none;padding:12px 14px;background:transparent;color:var(--tx);font:inherit;outline:none}
+#fh{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;z-index:30;padding:calc(16px + env(safe-area-inset-top,0px)) 16px calc(16px + env(safe-area-inset-bottom,0px))}#fh.on{display:flex}#fh .box{background:var(--card);border-radius:14px;max-width:640px;width:100%;max-height:100%;overflow:auto;padding:16px}#fh .hd{display:flex;justify-content:space-between;align-items:center;font-size:1.1rem}#fh h3{margin:16px 0 6px;color:var(--ac);font-size:1rem}#fh li{margin:3px 0}#fh .t th{white-space:nowrap}
+</style></head><body>
+<header><h1>🧪 Repetitionsuppgifter</h1><p>Atomens byggnad, periodiska systemet och kemisk bindning</p>
+<div class="bar"><button id="all">Visa alla facit</button><button id="none">Dölj alla facit</button><button id="fbtn">🧪 Formelhjälp</button><button id="tbtn">🌓 Ljust/Mörkt</button></div></header>
+<main id="m"></main>
+<div id="fh"><div class="box"><div class="hd"><b>🧪 Formelhjälp</b><button id="fx">✕</button></div><div id="fc"></div></div></div>
+<button id="nbtn" title="Anteckningar" aria-label="Anteckningar">📖</button>
+<div id="np"><div class="h"><span>📖 Anteckningar <small>sparas automatiskt</small></span><button id="nx">✕</button></div><textarea id="nt" placeholder="Skriv dina anteckningar här..."></textarea></div>
+<script>
+function lw(N,B,D){let s="";B.forEach(([i,j,n])=>{const [x1,y1]=N[i],[x2,y2]=N[j],dx=x2-x1,dy=y2-y1,l=Math.hypot(dx,dy),ux=dx/l,uy=dy/l;for(let k=0;k<n;k++){const o=(k-(n-1)/2)*4;s+=`<line x1="${x1+ux*11-uy*o}" y1="${y1+uy*11+ux*o}" x2="${x2-ux*11-uy*o}" y2="${y2-uy*11+ux*o}" stroke="currentColor" stroke-width="2"/>`}});N.forEach(([x,y,t])=>s+=`<text x="${x}" y="${y}" text-anchor="middle" dominant-baseline="central" font-size="17" font-weight="700" fill="currentColor">${t}</text>`);D.forEach(([x,y,v])=>{const a=v?[0,3]:[3,0];s+=`<circle cx="${x-a[0]}" cy="${y-a[1]}" r="1.8" fill="currentColor"/><circle cx="${x+a[0]}" cy="${y+a[1]}" r="1.8" fill="currentColor"/>`});return `<svg viewBox="0 0 120 100" width="130" style="color:var(--tx)">${s}</svg>`}
+function atom(){let s="";[28,52].forEach(r=>s+=`<circle cx="70" cy="70" r="${r}" fill="none" stroke="#888"/>`);s+=`<circle cx="70" cy="70" r="15" fill="#e8a0a0" stroke="#a55"/><text x="70" y="67" text-anchor="middle" font-size="8" fill="#400">6p</text><text x="70" y="77" text-anchor="middle" font-size="8" fill="#400">6n</text>`;[[28,[0,180]],[52,[45,135,225,315]]].forEach(([r,as])=>as.forEach(a=>{const t=a*Math.PI/180;s+=`<circle cx="${70+r*Math.cos(t)}" cy="${70+r*Math.sin(t)}" r="4" fill="#3b5bdb"/>`}));return `<svg viewBox="0 0 140 140" width="150">${s}</svg>`}
+const T4=[[60,14,"X"],[60,86,"H"],[22,50,"H"],[98,50,"H"]];
+const tet=c=>lw([[60,50,c],[60,14,"H"],[60,86,"H"],[22,50,"H"],[98,50,"H"]],[[0,1,1],[0,2,1],[0,3,1],[0,4,1]],[]);
+const L={C:atom(),CH4:tet("C"),SiH4:tet("Si"),N2:lw([[28,50,"N"],[92,50,"N"]],[[0,1,3]],[[10,50,true],[110,50,true]]),HBr:lw([[25,50,"H"],[80,50,"Br"]],[[0,1,1]],[[80,33,false],[80,67,false],[99,50,true]]),H2S:lw([[60,38,"S"],[30,68,"H"],[90,68,"H"]],[[0,1,1],[0,2,1]],[[47,21,false],[73,21,false]]),PH3:lw([[60,42,"P"],[24,66,"H"],[96,66,"H"],[60,86,"H"]],[[0,1,1],[0,2,1],[0,3,1]],[[60,24,false]])};
+const S=[
+["Atomen & periodiska systemet",[
+["1","Rita en kolatom och sätt ut alla elektronerna korrekt samt namnge partiklarna i kärnan.",[],[["","Kärnan: 6 protoner + 6 neutroner. Elektroner: 2 i första skalet, 4 i andra skalet (6 totalt).<br>"+L.C]]],
+["2","Vad kallas de elektroner som sitter i yttersta skalet?",[],[["","Valenselektroner."]]],
+["3","Vad kallas de fyra första elektronskalen och hur många elektroner kan det max finnas i vardera?",[],[["Skal 1","K-skalet – max 2"],["Skal 2","L-skalet – max 8"],["Skal 3","M-skalet – max 18"],["Skal 4","N-skalet – max 32"]]],
+["4","Vad står siffrorna för i bilden? (23 och 11 vid Na, Natrium)",[],[["23","Masstal = antal protoner + neutroner"],["11","Atomnummer = antal protoner (och elektroner i neutral atom)"]]],
+["5a","Vad kallas grupp 1, 17 och 18 i periodiska systemet?",[],[["Grupp 1","Alkalimetaller"],["Grupp 17","Halogener"],["Grupp 18","Ädelgaser"]]],
+["5b","Varför är Beryllium, Magnesium och Kalcium i samma grupp?",[],[["","De är alla i grupp 2 och har därför lika många valenselektroner (2), vilket ger liknande egenskaper."]]],
+["6","Varför är Järn, Nickel och Koppar i samma period?",[],[["","De har lika många elektronskal (alla fyra), så de står på samma rad (period 4)."]]],
+["7a","Hur ser man i PS om ämnen är metaller eller icke-metaller?",[],[["","Metallerna står till vänster, icke-metallerna uppe till höger. Gränsen är en trappstegslinje där halvmetallerna ligger."]]],
+["8","Hur många valenselektroner har ämnena i grupp 2? Grupp 15?",[],[["Grupp 2","2 valenselektroner"],["Grupp 15","5 valenselektroner"]]],
+["9","Vilken laddning kommer nedanstående ämnen få när de blir joner?",[],[["a) Kalium","K⁺"],["b) Barium","Ba²⁺"],["c) Svavel","S²⁻"],["d) Brom","Br⁻"],["e) Kväve","N³⁻"],["f) Cesium","Cs⁺"]]],
+["10","Varför bildar ämnen i grupp 16 2−-joner?",[],[["","De har 6 valenselektroner och tar upp 2 elektroner för att få ett fullt yttersta skal (8 elektroner, oktettregeln)."]]],
+["11","Vilket ämne av natrium och cesium är mest reaktivt? Varför?",[],[["","Cesium. Valenselektronen sitter längre från kärnan (fler skal) och är svagare bunden, så den lämnas lättare ifrån sig."]]],
+["12","Vilket ämne av syre och svavel är mest reaktivt? Varför?",[],[["","Syre. För icke-metaller ökar reaktiviteten uppåt i gruppen: syre har färre skal, så kärnan drar starkare på elektroner den ska ta upp."]]],
+["13","Vilken är störst av K eller K⁺?",[],[["","K. K⁺ har förlorat sitt yttersta skal och har samma antal protoner på färre elektroner, så den är mindre."]]],
+["14","Förklara så noga du kan den kemiska bindningen i litiumklorid.",[],[["","Li har 1 valenselektron, Cl har 7. Li lämnar ifrån sig sin elektron till Cl → Li⁺ och Cl⁻. De motsatta laddningarna attraherar varandra elektrostatiskt: jonbindning. Båda får fullt yttersta skal."]]],
+["15","Kombinera jonerna till jonföreningar (Cl⁻, O²⁻, NO₃⁻, SO₄²⁻).",["Metallen (katjonen) skrivs alltid först."],[["Cu²⁺","CuCl₂, CuO, Cu(NO₃)₂, CuSO₄"],["Zn²⁺","ZnCl₂, ZnO, Zn(NO₃)₂, ZnSO₄"],["Pb²⁺","PbCl₂, PbO, Pb(NO₃)₂, PbSO₄"],["Ag⁺","AgCl, Ag₂O, AgNO₃, Ag₂SO₄"],["Al³⁺","AlCl₃, Al₂O₃, Al(NO₃)₃, Al₂(SO₄)₃"]]]
+]],
+["Formler & bindningar",[
+["16","Skriv formler för följande jonföreningar.",[],[["a) Kalciumoxid","CaO"],["b) Natriumfluorid","NaF"],["c) Natriumoxid","Na₂O"],["d) Magnesiumnitrid","Mg₃N₂"],["e) Kaliumnitrat","KNO₃"],["f) Kaliumhydrid","KH"],["g) Aluminiumklorid","AlCl₃"],["h) Natriumsulfat","Na₂SO₄"],["i) Kalciumkarbonat","CaCO₃"],["j) Koppar(I)bromid","CuBr"]]],
+["17a","Beskriv så noga du kan hur den kemiska bindningen i metan, CH₄, ser ut.",[],[["","Kovalent bindning: C delar ett elektronpar med var och en av fyra H (4 enkelbindningar, 8 elektroner kring C). Molekylen är en symmetrisk tetraeder.<br>"+L.CH4]]],
+["17b","Beskriv så noga du kan hur den kemiska bindningen i N₂ ser ut.",[],[["","Trippelbindning (N≡N): atomerna delar 3 elektronpar. Dessutom har varje N ett fritt elektronpar. Båda får 8 elektroner kring sig.<br>"+L.N2]]],
+["17c","Rita elektronformler för följande molekyler.",[],[["HBr","H–Br, Br har 3 fria elektronpar<br>"+L.HBr],["H₂S","S i mitten med två H (böjd) och 2 fria elektronpar på S<br>"+L.H2S],["SiH₄","Si i mitten med fyra enkelbindningar till H, inga fria par<br>"+L.SiH4],["PH₃","P med tre H och 1 fritt elektronpar (pyramid)<br>"+L.PH3]]],
+["18","Vilken/vilka av ovanstående kemiska föreningar är en dipol? Motivera med elektronegativitet och symmetri. Föreningarna är CH₄, N₂, HBr, H₂S, SiH₄ och PH₃.",[],[["Dipoler","HBr, H₂S och PH₃"],["Varför","HBr: Br är mer elektronegativt än H. H₂S: polära bindningar och böjd, osymmetrisk form. PH₃: pyramidform med ett fritt elektronpar, alltså osymmetrisk, så dipolerna tar inte ut varandra (en svag dipol, eftersom P–H-bindningen i sig är nästan opolär)."],["Inte dipoler","CH₄ och SiH₄ är symmetriska tetraedrar så dipolerna tar ut varandra. N₂ har ingen skillnad i elektronegativitet."]]],
+["19","Förklara varför molekyler av samma grundämnen inte är dipoler.",[],[["","Samma atomer har samma elektronegativitet, så elektronerna delas lika. Ingen bindning är polär och ingen sida blir delvis negativ/positiv."]]],
+["20","Vilken typ av intramolekylär bindning finns i följande föreningar?",["Dipol är en egenskap hos molekylen, inte en bindningstyp."],[["Natriumfluorid","Jonbindning"],["Svaveldioxid","Kovalent bindning (polär)"],["Väteklorid","Kovalent bindning (polär)"],["Kalciumklorid","Jonbindning"],["Mässing (koppar och zink)","Metallbindning"]]],
+["21","Vilken typ av intramolekylär bindning förekommer mellan:",[],[["Metall och icke-metall","Jonbindning"],["Icke-metaller","Kovalent bindning"],["Metaller","Metallbindning"]]],
+["22","Vilken av nedanstående föreningar är en jonförening? a. SiCl₄ b. BF₃ c. CBr₄ d. S₂Cl₂ e. CaBr₂",[],[["","e. CaBr₂ (metall + icke-metall). Alla andra består bara av icke-metaller/halvmetaller."]]],
+["23","Vilka av följande är dipoler? Varför? a. Br₂  b. HBr  c. O₂  d. CH₄  e. CH₃Cl",[],[["Dipoler","b. HBr och e. CH₃Cl. Båda har polära bindningar och osymmetrisk form."],["Inte dipoler","a. Br₂ och c. O₂ (samma atomer, ingen polaritet). d. CH₄ (polära/opolära bindningar tar ut varandra i symmetrisk tetraeder)."]]],
+["24","Namnge följande jonföreningar.",[],[["a) MgCl₂","Magnesiumklorid"],["b) Na₂SO₄","Natriumsulfat"],["c) Ca(NO₃)₂","Kalciumnitrat"],["d) K₂CO₃","Kaliumkarbonat"],["e) CuSO₄","Koppar(II)sulfat"],["f) CsNO₃","Cesiumnitrat"]]]
+]],
+["Egenskaper & intermolekylära bindningar",[
+["25","Vilket av ämnena litiumfluorid och natriumklorid har högst smältpunkt? Varför?",[],[["","Litiumfluorid. Li⁺ och F⁻ är mindre joner än Na⁺ och Cl⁻, så avståndet mellan jonerna är kortare och jonbindningen starkare. Det krävs mer energi för att bryta den."]]],
+["26","Vilken av metallerna Natrium och Magnesium har starkast metallbindning? Varför?",[],[["","Magnesium. Varje Mg-atom bidrar med 2 valenselektroner (Na bara 1) och bildar 2+-joner, så attraktionen mellan jonkärnor och elektronhavet blir starkare."]]],
+["27a","Vad kallas de tre intermolekylära bindningarna?",[],[["1","Dispersionsbindning (London-kraft), svagast"],["2","Dipolbindning (dipol-dipol)"],["3","Vätebindning, starkast"]]],
+["27b","Vilken är starkast?",[],[["","Vätebindning."]]],
+["28","Vilken typ av bindning finns mellan molekyler som inte är dipoler? Hur uppstår den?",[],[["","Dispersionsbindning. Elektronerna rör sig hela tiden och fördelas tillfälligt ojämnt, vilket ger en tillfällig dipol. Den inducerar en dipol i grannmolekylen och de attraherar varandra svagt."]]],
+["29","Ange vilken intermolekylär bindning du förväntas hitta i:",[],[["Vatten H₂O","Vätebindning"],["Bensin C₈H₁₈","Dispersionsbindning"],["Ammoniak NH₃","Vätebindning"],["Saltsyra HCl","Dipolbindning"],["Svavelväte H₂S","Dipolbindning"]]]
+]]];
+const kd=(c,r)=>{if(r===1)return c===1||c===18?"n":null;if(r<4&&c>2&&c<13)return null;const sm={2:[13],3:[14],4:[14,15],5:[15,16],6:[17]}[r];if(sm&&sm.includes(c))return"s";const nm={2:14,3:15,4:16,5:17,6:18}[r];return nm&&c>=nm?"n":"m"};
+const CL={m:"#8fb8e8",n:"#6fae5a",s:"#f2c94c"};
+const ps=()=>{let s="";for(let r=1;r<=7;r++)for(let c=1;c<=18;c++){const k=kd(c,r);if(k)s+=`<rect x="${(c-1)*16+1}" y="${(r-1)*16+1}" width="15" height="15" rx="2" fill="${CL[k]}"/>`}return `<div class="fig"><svg viewBox="0 0 290 114" width="360">${s}</svg><div class="lg"><i style="background:${CL.m}"></i>Metaller<i style="background:${CL.n}"></i>Icke-metaller<i style="background:${CL.s}"></i>Halvmetaller</div></div>`};
+const mol=(at,bd)=>`<svg viewBox="0 0 100 80" width="130">${bd.map(([i,j])=>`<line x1="${at[i][0]}" y1="${at[i][1]}" x2="${at[j][0]}" y2="${at[j][1]}" stroke="#888" stroke-width="3"/>`).join("")}${at.map(([x,y,r,f])=>`<circle cx="${x}" cy="${y}" r="${r}" fill="${f}" stroke="#555"/>`).join("")}</svg>`;
+const H="#f0f0f0";
+const gas=()=>{const at=[],bd=[];for(let i=0;i<8;i++){const x=8+i*12,y=i%2?46:34,d=i%2?13:-13;at.push([x,y,5,"#333"]);if(i)bd.push([i-1,i]);const k=at.length;at.push([x-3,y+d,3.5,H],[x+3,y+d,3.5,H]);bd.push([k-1,k],[k-1,k+1])}return mol(at,bd)};
+const MOL=[mol([[50,28,12,"#e04040"],[26,54,7,H],[74,54,7,H]],[[0,1],[0,2]]),gas(),mol([[50,28,12,"#3b5bdb"],[24,54,7,H],[76,54,7,H],[50,66,7,H]],[[0,1],[0,2],[0,3]]),mol([[30,40,7,H],[62,40,13,"#3aa04a"]],[[0,1]]),mol([[50,28,14,"#e6b422"],[26,54,7,H],[74,54,7,H]],[[0,1],[0,2]])];
+const AUTO=["5a","8","9","16","17c","20","21","24"];
+const tb=(h,rows)=>`<table class="t"><tr>${h.map(x=>`<th>${x}</th>`).join("")}</tr>${rows.map(r=>`<tr>${r.map(x=>x===""||x[0]!=="#"?`<td>${x}</td>`:`<th>${x.slice(1)}</th>`).join("")}</tr>`).join("")}</table>`;
+const figure=(n,a)=>{if(n==="7a")return ps();if(n==="3")return `<div class="fig">${tb(["Skal","Namn på skalet","Max antal elektroner"],[ ["#1","",""],["#2","",""],["#3","",""],["#4","",""] ])}</div>`;if(n==="4")return `<div class="nb"><div><span>23 →</span><span>11 →</span></div><div><b>Na</b><small>Natrium</small></div></div>`;if(n==="15")return `<div class="fig">${tb(["","Cl⁻","O²⁻","NO₃⁻","SO₄²⁻"],["Cu²⁺","Zn²⁺","Pb²⁺","Ag⁺","Al³⁺"].map(x=>["#"+x,"","","","])).replace(/\"\],\"\"/g, '
